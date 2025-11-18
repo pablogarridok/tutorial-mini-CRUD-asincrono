@@ -13,7 +13,8 @@ services:
     environment:
       APACHE_DOCUMENT_ROOT: /var/www/html
     command: >
-      bash -lc "docker-php-ext-enable opcache 2>/dev/null || true && apache2-foreground"
+      bash -lc "docker-php-ext-enable opcache 2>/dev/null || true
+      && apache2-foreground"
     healthcheck:
       test: ["CMD", "curl", "-fsS", "http://localhost/"]
       interval: 10s

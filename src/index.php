@@ -1,9 +1,5 @@
-<?php 
+<?php
 declare(strict_types=1);
-/**
-* Esta página solo verifica que el servidor PHP 8.4 funciona.
-* Más adelante, la Parte 1 mostrará el CRUD clásico (sin AJAX).
-*/
 ?>
 <!doctype html>
 <html lang="es">
