@@ -1,3 +1,14 @@
+<?php
+require_once __DIR__ . '/../auth.php';
+require_login();
+
+// Solo admins pueden entrar
+if ($_SESSION['role'] !== 'admin') {
+    header("Location: sociograma.php");
+    exit;
+}
+?>
+
 <!doctype html>
 <html lang="es">
 <head>
